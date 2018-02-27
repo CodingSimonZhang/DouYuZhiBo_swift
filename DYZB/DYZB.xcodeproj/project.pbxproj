@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441EED222044FC4F00E9E4EA /* QFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED212044FC4F00E9E4EA /* QFHomeViewController.swift */; };
+		441EED24204503B700E9E4EA /* QFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED23204503B700E9E4EA /* QFTabBarController.swift */; };
+		441EED26204503DC00E9E4EA /* QFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED25204503DC00E9E4EA /* QFNavigationController.swift */; };
+		441EED282045042400E9E4EA /* QFLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED272045042400E9E4EA /* QFLiveViewController.swift */; };
+		441EED2A2045050700E9E4EA /* QFFollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED292045050700E9E4EA /* QFFollowViewController.swift */; };
+		441EED2C2045051700E9E4EA /* QFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED2B2045051700E9E4EA /* QFProfileViewController.swift */; };
 		44EDA4012044ECC000D38921 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4002044ECC000D38921 /* AppDelegate.swift */; };
 		44EDA4062044ECC000D38921 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4042044ECC000D38921 /* Main.storyboard */; };
 		44EDA4082044ECC000D38921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4072044ECC000D38921 /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		441EED212044FC4F00E9E4EA /* QFHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QFHomeViewController.swift; path = DYZB/Classes/Home/QFHomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		441EED23204503B700E9E4EA /* QFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFTabBarController.swift; sourceTree = "<group>"; };
+		441EED25204503DC00E9E4EA /* QFNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFNavigationController.swift; sourceTree = "<group>"; };
+		441EED272045042400E9E4EA /* QFLiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFLiveViewController.swift; sourceTree = "<group>"; };
+		441EED292045050700E9E4EA /* QFFollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFFollowViewController.swift; sourceTree = "<group>"; };
+		441EED2B2045051700E9E4EA /* QFProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFProfileViewController.swift; sourceTree = "<group>"; };
 		44EDA3FD2044ECC000D38921 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EDA4002044ECC000D38921 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44EDA4052044ECC000D38921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,6 +61,7 @@
 		441EED1B2044FA8100E9E4EA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				441EED212044FC4F00E9E4EA /* QFHomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -63,6 +76,7 @@
 		441EED1D2044FA8100E9E4EA /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				441EED292045050700E9E4EA /* QFFollowViewController.swift */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -70,6 +84,7 @@
 		441EED1E2044FA8100E9E4EA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				441EED2B2045051700E9E4EA /* QFProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -77,6 +92,7 @@
 		441EED1F2044FA8100E9E4EA /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				441EED272045042400E9E4EA /* QFLiveViewController.swift */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -84,6 +100,8 @@
 		441EED202044FA8100E9E4EA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				441EED23204503B700E9E4EA /* QFTabBarController.swift */,
+				441EED25204503DC00E9E4EA /* QFNavigationController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -143,6 +161,7 @@
 		44EDA3F52044ECC000D38921 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = QF;
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "QianFan-MINi";
@@ -189,7 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441EED2A2045050700E9E4EA /* QFFollowViewController.swift in Sources */,
+				441EED24204503B700E9E4EA /* QFTabBarController.swift in Sources */,
 				44EDA4012044ECC000D38921 /* AppDelegate.swift in Sources */,
+				441EED282045042400E9E4EA /* QFLiveViewController.swift in Sources */,
+				441EED26204503DC00E9E4EA /* QFNavigationController.swift in Sources */,
+				441EED222044FC4F00E9E4EA /* QFHomeViewController.swift in Sources */,
+				441EED2C2045051700E9E4EA /* QFProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
