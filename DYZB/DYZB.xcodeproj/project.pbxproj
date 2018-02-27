@@ -33,55 +33,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		440315892044F459005AC799 /* Classes */ = {
+		441EED1A2044FA8100E9E4EA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4403158F2044F459005AC799 /* Main */,
-				4403158A2044F459005AC799 /* Home */,
-				4403158E2044F459005AC799 /* Live */,
-				4403158C2044F459005AC799 /* Follow */,
-				4403158D2044F459005AC799 /* Profile */,
-				4403158B2044F459005AC799 /* Tools */,
+				441EED202044FA8100E9E4EA /* Main */,
+				441EED1B2044FA8100E9E4EA /* Home */,
+				441EED1F2044FA8100E9E4EA /* Live */,
+				441EED1D2044FA8100E9E4EA /* Follow */,
+				441EED1E2044FA8100E9E4EA /* Profile */,
+				441EED1C2044FA8100E9E4EA /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		4403158A2044F459005AC799 /* Home */ = {
+		441EED1B2044FA8100E9E4EA /* Home */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		4403158B2044F459005AC799 /* Tools */ = {
+		441EED1C2044FA8100E9E4EA /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		4403158C2044F459005AC799 /* Follow */ = {
+		441EED1D2044FA8100E9E4EA /* Follow */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Follow;
 			sourceTree = "<group>";
 		};
-		4403158D2044F459005AC799 /* Profile */ = {
+		441EED1E2044FA8100E9E4EA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		4403158E2044F459005AC799 /* Live */ = {
+		441EED1F2044FA8100E9E4EA /* Live */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Live;
 			sourceTree = "<group>";
 		};
-		4403158F2044F459005AC799 /* Main */ = {
+		441EED202044FA8100E9E4EA /* Main */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -107,7 +107,7 @@
 		44EDA3FF2044ECC000D38921 /* DYZB */ = {
 			isa = PBXGroup;
 			children = (
-				440315892044F459005AC799 /* Classes */,
+				441EED1A2044FA8100E9E4EA /* Classes */,
 				44EDA4002044ECC000D38921 /* AppDelegate.swift */,
 				44EDA4042044ECC000D38921 /* Main.storyboard */,
 				44EDA4072044ECC000D38921 /* Assets.xcassets */,
