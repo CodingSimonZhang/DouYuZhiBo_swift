@@ -8,18 +8,35 @@
 
 import UIKit
 
+private let kTitleHeight : CGFloat = 40
 
 class QFHomeViewController: UIViewController {
+    //Mark 懒加载
+    private lazy var pageTitleView : QFPageTitleView = {
+        let titleFrame = CGRect.init(x: 0, y: kStatusBarHeight+kNavigationBarHeight, width:kScreenWidth, height:kTitleHeight)
+        let titles = ["推荐","游戏","娱乐","趣玩"]
+        let titleView = QFPageTitleView.init(frame:titleFrame , titles:titles)
+        return titleView
+    }()//闭包
+    
+    //Mark 系统的回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+
     }
     
 }
 extension QFHomeViewController {
     private func setupUI(){
+        view.backgroundColor = UIColor.white
+        
+        //0.不需要调整scrollView 内边距
+        automaticallyAdjustsScrollViewInsets = false
         //设置导航栏
         setupNavigationBar()
+        //添加TitleView
+        view.addSubview(pageTitleView)
     }
     private func setupNavigationBar(){
         //设置左侧的item

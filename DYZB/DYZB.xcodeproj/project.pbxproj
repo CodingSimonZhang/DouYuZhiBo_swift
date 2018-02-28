@@ -14,6 +14,8 @@
 		441EED4220454F8000E9E4EA /* QFFollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED3F20454F8000E9E4EA /* QFFollowViewController.swift */; };
 		441EED4720454F8800E9E4EA /* QFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED4620454F8800E9E4EA /* QFProfileViewController.swift */; };
 		4487EB802046578800B590FF /* UIBarButtonItem_Extersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4487EB7F2046578800B590FF /* UIBarButtonItem_Extersion.swift */; };
+		4487EB8220468CAB00B590FF /* QFPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4487EB8120468CAB00B590FF /* QFPageTitleView.swift */; };
+		4487EB8420468F5C00B590FF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4487EB8320468F5C00B590FF /* Common.swift */; };
 		44EDA4012044ECC000D38921 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4002044ECC000D38921 /* AppDelegate.swift */; };
 		44EDA4082044ECC000D38921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4072044ECC000D38921 /* Assets.xcassets */; };
 		44EDA40B2044ECC000D38921 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4092044ECC000D38921 /* LaunchScreen.storyboard */; };
@@ -27,6 +29,8 @@
 		441EED3F20454F8000E9E4EA /* QFFollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QFFollowViewController.swift; sourceTree = "<group>"; };
 		441EED4620454F8800E9E4EA /* QFProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QFProfileViewController.swift; sourceTree = "<group>"; };
 		4487EB7F2046578800B590FF /* UIBarButtonItem_Extersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem_Extersion.swift; sourceTree = "<group>"; };
+		4487EB8120468CAB00B590FF /* QFPageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFPageTitleView.swift; sourceTree = "<group>"; };
+		4487EB8320468F5C00B590FF /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		44EDA3FD2044ECC000D38921 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EDA4002044ECC000D38921 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44EDA4072044ECC000D38921 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				4487EB7E2046574A00B590FF /* Extersion */,
+				4487EB8320468F5C00B590FF /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 		441EED2D20454F5600E9E4EA /*  VIiew */ = {
 			isa = PBXGroup;
 			children = (
+				4487EB8120468CAB00B590FF /* QFPageTitleView.swift */,
 			);
 			path = " VIiew";
 			sourceTree = "<group>";
@@ -338,10 +344,12 @@
 				4487EB802046578800B590FF /* UIBarButtonItem_Extersion.swift in Sources */,
 				441EED4220454F8000E9E4EA /* QFFollowViewController.swift in Sources */,
 				441EED3820454F6100E9E4EA /* QFHomeViewController.swift in Sources */,
+				4487EB8220468CAB00B590FF /* QFPageTitleView.swift in Sources */,
 				441EED3320454F5600E9E4EA /* QFTabBarController.swift in Sources */,
 				441EED3D20454F6800E9E4EA /* QFLiveViewController.swift in Sources */,
 				441EED3220454F5600E9E4EA /* QFNavigationController.swift in Sources */,
 				44EDA4012044ECC000D38921 /* AppDelegate.swift in Sources */,
+				4487EB8420468F5C00B590FF /* Common.swift in Sources */,
 				441EED4720454F8800E9E4EA /* QFProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
