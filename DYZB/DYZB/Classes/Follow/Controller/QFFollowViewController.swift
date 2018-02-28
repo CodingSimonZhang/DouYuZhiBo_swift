@@ -1,5 +1,5 @@
 //
-//  QFNavigationController.swift
+//  QFFollowViewController.swift
 //  DYZB
 //
 //  Created by QianFan-MINi on 27/02/2018.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class QFNavigationController: UINavigationController {
+class QFFollowViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "关注"
         // Do any additional setup after loading the view.
     }
 

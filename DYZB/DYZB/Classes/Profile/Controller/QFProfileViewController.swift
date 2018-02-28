@@ -1,5 +1,5 @@
 //
-//  QFLiveViewController.swift
+//  QFProfileViewController.swift
 //  DYZB
 //
 //  Created by QianFan-MINi on 27/02/2018.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class QFLiveViewController: UIViewController {
+class QFProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "我的"
         // Do any additional setup after loading the view.
     }
 

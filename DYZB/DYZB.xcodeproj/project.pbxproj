@@ -7,28 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		441EED222044FC4F00E9E4EA /* QFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED212044FC4F00E9E4EA /* QFHomeViewController.swift */; };
-		441EED24204503B700E9E4EA /* QFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED23204503B700E9E4EA /* QFTabBarController.swift */; };
-		441EED26204503DC00E9E4EA /* QFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED25204503DC00E9E4EA /* QFNavigationController.swift */; };
-		441EED282045042400E9E4EA /* QFLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED272045042400E9E4EA /* QFLiveViewController.swift */; };
-		441EED2A2045050700E9E4EA /* QFFollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED292045050700E9E4EA /* QFFollowViewController.swift */; };
-		441EED2C2045051700E9E4EA /* QFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED2B2045051700E9E4EA /* QFProfileViewController.swift */; };
+		441EED3220454F5600E9E4EA /* QFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED2F20454F5600E9E4EA /* QFNavigationController.swift */; };
+		441EED3320454F5600E9E4EA /* QFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED3020454F5600E9E4EA /* QFTabBarController.swift */; };
+		441EED3820454F6100E9E4EA /* QFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED3620454F6000E9E4EA /* QFHomeViewController.swift */; };
+		441EED3D20454F6800E9E4EA /* QFLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED3C20454F6800E9E4EA /* QFLiveViewController.swift */; };
+		441EED4220454F8000E9E4EA /* QFFollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED3F20454F8000E9E4EA /* QFFollowViewController.swift */; };
+		441EED4720454F8800E9E4EA /* QFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441EED4620454F8800E9E4EA /* QFProfileViewController.swift */; };
 		44EDA4012044ECC000D38921 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EDA4002044ECC000D38921 /* AppDelegate.swift */; };
-		44EDA4062044ECC000D38921 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4042044ECC000D38921 /* Main.storyboard */; };
 		44EDA4082044ECC000D38921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4072044ECC000D38921 /* Assets.xcassets */; };
 		44EDA40B2044ECC000D38921 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EDA4092044ECC000D38921 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		441EED212044FC4F00E9E4EA /* QFHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QFHomeViewController.swift; path = DYZB/Classes/Home/QFHomeViewController.swift; sourceTree = SOURCE_ROOT; };
-		441EED23204503B700E9E4EA /* QFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFTabBarController.swift; sourceTree = "<group>"; };
-		441EED25204503DC00E9E4EA /* QFNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFNavigationController.swift; sourceTree = "<group>"; };
-		441EED272045042400E9E4EA /* QFLiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFLiveViewController.swift; sourceTree = "<group>"; };
-		441EED292045050700E9E4EA /* QFFollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFFollowViewController.swift; sourceTree = "<group>"; };
-		441EED2B2045051700E9E4EA /* QFProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFProfileViewController.swift; sourceTree = "<group>"; };
+		441EED2F20454F5600E9E4EA /* QFNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QFNavigationController.swift; sourceTree = "<group>"; };
+		441EED3020454F5600E9E4EA /* QFTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QFTabBarController.swift; sourceTree = "<group>"; };
+		441EED3620454F6000E9E4EA /* QFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QFHomeViewController.swift; sourceTree = "<group>"; };
+		441EED3C20454F6800E9E4EA /* QFLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QFLiveViewController.swift; sourceTree = "<group>"; };
+		441EED3F20454F8000E9E4EA /* QFFollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QFFollowViewController.swift; sourceTree = "<group>"; };
+		441EED4620454F8800E9E4EA /* QFProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QFProfileViewController.swift; sourceTree = "<group>"; };
 		44EDA3FD2044ECC000D38921 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EDA4002044ECC000D38921 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44EDA4052044ECC000D38921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44EDA4072044ECC000D38921 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44EDA40A2044ECC000D38921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44EDA40C2044ECC000D38921 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,7 +59,9 @@
 		441EED1B2044FA8100E9E4EA /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				441EED212044FC4F00E9E4EA /* QFHomeViewController.swift */,
+				441EED3420454F6000E9E4EA /*  VIiew */,
+				441EED3520454F6000E9E4EA /* Controller */,
+				441EED3720454F6000E9E4EA /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -76,7 +76,9 @@
 		441EED1D2044FA8100E9E4EA /* Follow */ = {
 			isa = PBXGroup;
 			children = (
-				441EED292045050700E9E4EA /* QFFollowViewController.swift */,
+				441EED4020454F8000E9E4EA /*  VIiew */,
+				441EED3E20454F8000E9E4EA /* Controller */,
+				441EED4120454F8000E9E4EA /* Model */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -84,7 +86,9 @@
 		441EED1E2044FA8100E9E4EA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				441EED2B2045051700E9E4EA /* QFProfileViewController.swift */,
+				441EED4420454F8800E9E4EA /*  VIiew */,
+				441EED4520454F8800E9E4EA /* Controller */,
+				441EED4320454F8800E9E4EA /* Model */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -92,7 +96,9 @@
 		441EED1F2044FA8100E9E4EA /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				441EED272045042400E9E4EA /* QFLiveViewController.swift */,
+				441EED3A20454F6800E9E4EA /*  VIiew */,
+				441EED3B20454F6800E9E4EA /* Controller */,
+				441EED3920454F6800E9E4EA /* Model */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -100,10 +106,122 @@
 		441EED202044FA8100E9E4EA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				441EED23204503B700E9E4EA /* QFTabBarController.swift */,
-				441EED25204503DC00E9E4EA /* QFNavigationController.swift */,
+				441EED2D20454F5600E9E4EA /*  VIiew */,
+				441EED2E20454F5600E9E4EA /* Controller */,
+				441EED3120454F5600E9E4EA /* Model */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		441EED2D20454F5600E9E4EA /*  VIiew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = " VIiew";
+			sourceTree = "<group>";
+		};
+		441EED2E20454F5600E9E4EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				441EED2F20454F5600E9E4EA /* QFNavigationController.swift */,
+				441EED3020454F5600E9E4EA /* QFTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		441EED3120454F5600E9E4EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		441EED3420454F6000E9E4EA /*  VIiew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = " VIiew";
+			sourceTree = "<group>";
+		};
+		441EED3520454F6000E9E4EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				441EED3620454F6000E9E4EA /* QFHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		441EED3720454F6000E9E4EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		441EED3920454F6800E9E4EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		441EED3A20454F6800E9E4EA /*  VIiew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = " VIiew";
+			sourceTree = "<group>";
+		};
+		441EED3B20454F6800E9E4EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				441EED3C20454F6800E9E4EA /* QFLiveViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		441EED3E20454F8000E9E4EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				441EED3F20454F8000E9E4EA /* QFFollowViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		441EED4020454F8000E9E4EA /*  VIiew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = " VIiew";
+			sourceTree = "<group>";
+		};
+		441EED4120454F8000E9E4EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		441EED4320454F8800E9E4EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		441EED4420454F8800E9E4EA /*  VIiew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = " VIiew";
+			sourceTree = "<group>";
+		};
+		441EED4520454F8800E9E4EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				441EED4620454F8800E9E4EA /* QFProfileViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		44EDA3F42044ECC000D38921 = {
@@ -127,7 +245,6 @@
 			children = (
 				441EED1A2044FA8100E9E4EA /* Classes */,
 				44EDA4002044ECC000D38921 /* AppDelegate.swift */,
-				44EDA4042044ECC000D38921 /* Main.storyboard */,
 				44EDA4072044ECC000D38921 /* Assets.xcassets */,
 				44EDA4092044ECC000D38921 /* LaunchScreen.storyboard */,
 				44EDA40C2044ECC000D38921 /* Info.plist */,
@@ -197,7 +314,6 @@
 			files = (
 				44EDA40B2044ECC000D38921 /* LaunchScreen.storyboard in Resources */,
 				44EDA4082044ECC000D38921 /* Assets.xcassets in Resources */,
-				44EDA4062044ECC000D38921 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,27 +324,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				441EED2A2045050700E9E4EA /* QFFollowViewController.swift in Sources */,
-				441EED24204503B700E9E4EA /* QFTabBarController.swift in Sources */,
+				441EED4220454F8000E9E4EA /* QFFollowViewController.swift in Sources */,
+				441EED3820454F6100E9E4EA /* QFHomeViewController.swift in Sources */,
+				441EED3320454F5600E9E4EA /* QFTabBarController.swift in Sources */,
+				441EED3D20454F6800E9E4EA /* QFLiveViewController.swift in Sources */,
+				441EED3220454F5600E9E4EA /* QFNavigationController.swift in Sources */,
 				44EDA4012044ECC000D38921 /* AppDelegate.swift in Sources */,
-				441EED282045042400E9E4EA /* QFLiveViewController.swift in Sources */,
-				441EED26204503DC00E9E4EA /* QFNavigationController.swift in Sources */,
-				441EED222044FC4F00E9E4EA /* QFHomeViewController.swift in Sources */,
-				441EED2C2045051700E9E4EA /* QFProfileViewController.swift in Sources */,
+				441EED4720454F8800E9E4EA /* QFProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		44EDA4042044ECC000D38921 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44EDA4052044ECC000D38921 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		44EDA4092044ECC000D38921 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -354,7 +462,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianfan.forum.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,7 +478,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianfan.forum.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";

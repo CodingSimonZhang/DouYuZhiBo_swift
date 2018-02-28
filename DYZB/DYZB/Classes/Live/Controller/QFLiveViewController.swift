@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  QFLiveViewController.swift
 //  DYZB
 //
 //  Created by QianFan-MINi on 27/02/2018.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class QFHomeViewController: UIViewController {
+class QFLiveViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "直播"
         // Do any additional setup after loading the view.
     }
 
