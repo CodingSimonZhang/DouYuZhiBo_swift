@@ -8,16 +8,34 @@
 
 import UIKit
 
-private let kTitleHeight : CGFloat = 40
+private let kTitleViewHeight : CGFloat = 40
 
 class QFHomeViewController: UIViewController {
     //Mark 懒加载
     private lazy var pageTitleView : QFPageTitleView = {
-        let titleFrame = CGRect.init(x: 0, y: kStatusBarHeight+kNavigationBarHeight, width:kScreenWidth, height:kTitleHeight)
+        let titleFrame = CGRect.init(x: 0, y: kStatusBarHeight+kNavigationBarHeight, width:kScreenWidth, height:kTitleViewHeight)
         let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleView = QFPageTitleView.init(frame:titleFrame , titles:titles)
         return titleView
     }()//闭包
+    
+    private lazy var pageContentView : QFPageContentView = {
+        //1.确定内容的Frame
+        let contentViewHeight = kScreenHeight - kStatusBarHeight - kNavigationBarHeight - kTitleViewHeight
+        let contViewFrame = CGRect.init(x: 0, y: kStatusBarHeight + kNavigationBarHeight + kTitleViewHeight, width: kScreenWidth, height: contentViewHeight)
+        //2.确定所有子控制器
+        var childViewControllers = [UIViewController]()
+        for i in 0..<4{
+            let viewController = UIViewController()
+            viewController.view.backgroundColor = UIColor.init(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)) , b: CGFloat(arc4random_uniform(255)))
+            childViewControllers .append(viewController)
+            
+        }
+        
+        let contentView = QFPageContentView.init(frame: contViewFrame, childViewControllers: childViewControllers, parentViewController: self)
+        return contentView
+    }()
+    
     
     //Mark 系统的回调函数
     override func viewDidLoad() {
@@ -37,6 +55,9 @@ extension QFHomeViewController {
         setupNavigationBar()
         //添加TitleView
         view.addSubview(pageTitleView)
+        //添加contentView
+        view.addSubview(pageContentView)
+        pageContentView.backgroundColor = UIColor.red
     }
     private func setupNavigationBar(){
         //设置左侧的item
