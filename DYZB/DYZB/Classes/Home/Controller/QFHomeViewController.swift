@@ -12,14 +12,15 @@ private let kTitleViewHeight : CGFloat = 40
 
 class QFHomeViewController: UIViewController {
     //Mark 懒加载
-    private lazy var pageTitleView : QFPageTitleView = {
+    private lazy var pageTitleView : QFPageTitleView = { [weak self] in
         let titleFrame = CGRect.init(x: 0, y: kStatusBarHeight+kNavigationBarHeight, width:kScreenWidth, height:kTitleViewHeight)
         let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleView = QFPageTitleView.init(frame:titleFrame , titles:titles)
+        titleView.delgate = self
         return titleView
     }()//闭包
     
-    private lazy var pageContentView : QFPageContentView = {
+    private lazy var pageContentView : QFPageContentView = {[weak self] in
         //1.确定内容的Frame
         let contentViewHeight = kScreenHeight - kStatusBarHeight - kNavigationBarHeight - kTitleViewHeight
         let contViewFrame = CGRect.init(x: 0, y: kStatusBarHeight + kNavigationBarHeight + kTitleViewHeight, width: kScreenWidth, height: contentViewHeight)
@@ -33,6 +34,7 @@ class QFHomeViewController: UIViewController {
         }
         
         let contentView = QFPageContentView.init(frame: contViewFrame, childViewControllers: childViewControllers, parentViewController: self)
+        contentView.delegate = self
         return contentView
     }()
     
@@ -45,6 +47,7 @@ class QFHomeViewController: UIViewController {
     }
     
 }
+//设置UI 界面
 extension QFHomeViewController {
     private func setupUI(){
         view.backgroundColor = UIColor.white
@@ -83,3 +86,19 @@ extension QFHomeViewController {
     }
     
 }
+//Mark :1.遵守pageTitleView的delegate 协议
+extension QFHomeViewController : QFPageTitleViewDelegate{
+    func pageTitleView(titleView: QFPageTitleView, slectedIndex index: Int) {
+        pageContentView.setCurrentIndex(currentIndex: index)
+    }
+    
+}
+
+//Mark :2.遵守pageContentView的delegate 协议
+extension QFHomeViewController : QFPageContentViewDelegate {
+    func pageContentView(contentView: QFPageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        
+    }
+}
+
+

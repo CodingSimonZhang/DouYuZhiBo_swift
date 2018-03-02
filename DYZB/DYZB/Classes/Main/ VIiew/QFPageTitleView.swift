@@ -7,11 +7,17 @@
 //
 
 import UIKit
+
+protocol QFPageTitleViewDelegate : class {
+    func pageTitleView(titleView : QFPageTitleView ,slectedIndex index : Int)
+}
+
 private let kScrollLineHeight : CGFloat = 2
 class QFPageTitleView: UIView {
     //Mark: 定义属性
     private var titles : [String]
-
+    private var currentIndex : Int = 0
+    weak var delgate : QFPageTitleViewDelegate?
     //Mark: 懒加载属性
     private lazy var titleLabels : [UILabel] = [UILabel]()
     
@@ -83,6 +89,12 @@ extension QFPageTitleView {
             scrollView .addSubview(label)
             titleLabels.append(label)
             
+            //5.将label 添加手势
+            label.isUserInteractionEnabled = true
+            let tapGes = UITapGestureRecognizer.init(target: self, action: #selector(titleLabelClick(tapGes:)))
+            label.addGestureRecognizer(tapGes)
+            
+            
         }
         
         
@@ -107,3 +119,29 @@ extension QFPageTitleView {
     }
     
 }
+//Mark 监听label的点击
+extension QFPageTitleView {
+    @objc private func titleLabelClick(tapGes : UITapGestureRecognizer){
+        //1.获取当前的label
+       guard let currentLabel = tapGes.view as? UILabel else{return}
+        //2.获取之前的label
+        let oldLabel = titleLabels[currentIndex]
+        //3.切换文字的颜色
+        currentLabel.textColor = UIColor.orange
+        oldLabel.textColor = UIColor.darkGray
+        //4.保存最新的label的下标值
+        currentIndex = currentLabel.tag
+        //5.滚动条位置发生改变
+        let scrollLineX = CGFloat(currentIndex) * scrollLine.frame.width
+        UIView.animate(withDuration: 0.15) {
+            self.scrollLine.frame.origin.x = scrollLineX
+        }
+        //6.通知代理
+        delgate?.pageTitleView(titleView: self, slectedIndex: currentIndex)
+        
+    }
+    
+}
+
+
+
