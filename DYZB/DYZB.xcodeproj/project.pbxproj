@@ -25,7 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28B7BA3F21DDE3AA00668C1E /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
 		3DC7A43C30E9FE6BE55A5E65 /* Pods-DYZB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYZB/Pods-DYZB.debug.xcconfig"; sourceTree = "<group>"; };
 		441EED2F20454F5600E9E4EA /* QFNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QFNavigationController.swift; sourceTree = "<group>"; };
 		441EED3020454F5600E9E4EA /* QFTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QFTabBarController.swift; sourceTree = "<group>"; };
@@ -285,7 +284,6 @@
 			children = (
 				441EED1A2044FA8100E9E4EA /* Classes */,
 				44EDA4002044ECC000D38921 /* AppDelegate.swift */,
-				28B7BA3F21DDE3AA00668C1E /* PrefixHeader.h */,
 				44EDA4072044ECC000D38921 /* Assets.xcassets */,
 				44EDA4092044ECC000D38921 /* LaunchScreen.storyboard */,
 				44EDA40C2044ECC000D38921 /* Info.plist */,
