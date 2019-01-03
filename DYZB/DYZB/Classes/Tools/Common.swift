@@ -7,7 +7,10 @@
 //
 
 import UIKit
+
 import SnapKit
+import XCGLogger
+import MJRefresh
 let kStatusBarHeight : CGFloat = 20
 let kNavigationBarHeight : CGFloat = 44
 let kScreenWidth = UIScreen.main.bounds.width
