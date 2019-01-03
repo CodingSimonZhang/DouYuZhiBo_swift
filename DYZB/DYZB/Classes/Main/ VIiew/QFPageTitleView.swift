@@ -13,11 +13,11 @@ protocol QFPageTitleViewDelegate : class {
 }
 
 private let kScrollLineHeight : CGFloat = 2
-private var kLabelHeight: CGFloat = 0
 class QFPageTitleView: UIView {
     //Mark: 定义属性
     private var titles : [String]
     private var currentIndex : Int = 0
+    private var labelHeight: CGFloat = 0
     weak var delgate : QFPageTitleViewDelegate?
     //Mark: 懒加载属性
     private lazy var titleLabels : [UILabel] = [UILabel]()
@@ -68,7 +68,7 @@ extension QFPageTitleView {
         //0.确定label的frame的值
         let labelWidth : CGFloat = frame.width/CGFloat(titles.count)
         let labelHeight : CGFloat = frame.height - kScrollLineHeight
-        kLabelHeight = labelHeight;
+        labelHeight = labelHeight;
         let labelY : CGFloat = 0
         
         for (index,title) in titles.enumerated() {
@@ -129,7 +129,7 @@ extension QFPageTitleView {
         scrollView.addSubview(scrollLine)
         scrollLine.snp.makeConstraints { (make) in
             make.left.equalTo(firstLabel)
-            make.top.equalTo(kLabelHeight)
+            make.top.equalTo(labelHeight)
             make.width.equalTo(firstLabel)
             make.height.equalTo(kScrollLineHeight)
         }
