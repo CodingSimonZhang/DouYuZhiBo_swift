@@ -13,6 +13,7 @@ protocol QFPageTitleViewDelegate : class {
 }
 
 private let kScrollLineHeight : CGFloat = 2
+private var kLabelHeight: CGFloat = 0
 class QFPageTitleView: UIView {
     //Mark: 定义属性
     private var titles : [String]
@@ -62,12 +63,12 @@ extension QFPageTitleView {
         setupTitlesLabels()
         //3.设置底线和滚动滑块
         setupBottomLineAddSrollLine()
-
     }
     private func setupTitlesLabels(){
         //0.确定label的frame的值
         let labelWidth : CGFloat = frame.width/CGFloat(titles.count)
         let labelHeight : CGFloat = frame.height - kScrollLineHeight
+        kLabelHeight = labelHeight;
         let labelY : CGFloat = 0
         
         for (index,title) in titles.enumerated() {
@@ -83,12 +84,18 @@ extension QFPageTitleView {
             
             //3.设置label的frame
             let labelX : CGFloat = labelWidth * CGFloat(index)
-            label.frame = CGRect.init(x: labelX, y: labelY, width: labelWidth, height: labelHeight)
+//            label.frame = CGRect.init(x: labelX, y: labelY, width: labelWidth, height: labelHeight)
             
             //4.将label 添加到scrollView中
             scrollView .addSubview(label)
+            label.snp.makeConstraints { (make) in
+                make.left.equalTo(labelX)
+                make.top.equalTo(labelY)
+                make.width.equalTo(labelWidth)
+                make.height.equalTo(labelHeight)
+            }
             titleLabels.append(label)
-            
+
             //5.将label 添加手势
             label.isUserInteractionEnabled = true
             let tapGes = UITapGestureRecognizer.init(target: self, action: #selector(titleLabelClick(tapGes:)))
@@ -104,8 +111,13 @@ extension QFPageTitleView {
         let bottomLine = UIView()
         bottomLine.backgroundColor = UIColor.lightGray
         let lineHeight :CGFloat = 0.5
-        bottomLine.frame = CGRect.init(x: 0, y:frame.height - lineHeight , width: frame.width, height:lineHeight)
         addSubview(bottomLine)
+        bottomLine.snp.makeConstraints { (make) in
+            make.left.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.width.equalToSuperview()
+            make.height.equalTo(lineHeight)
+        }
         //2.添加滑动线
         //获取第一个label
         guard let firstLabel = titleLabels.first
@@ -115,7 +127,12 @@ extension QFPageTitleView {
         firstLabel.textColor = UIColor.orange
         //设置scrollLine属性
         scrollView.addSubview(scrollLine)
-        scrollLine.frame = CGRect.init(x:firstLabel.frame.origin.x, y: frame.height - kScrollLineHeight, width:firstLabel.frame.width, height:kScrollLineHeight)
+        scrollLine.snp.makeConstraints { (make) in
+            make.left.equalTo(firstLabel)
+            make.top.equalTo(kLabelHeight)
+            make.width.equalTo(firstLabel)
+            make.height.equalTo(kScrollLineHeight)
+        }
     }
     
 }
@@ -133,9 +150,20 @@ extension QFPageTitleView {
         currentIndex = currentLabel.tag
         //5.滚动条位置发生改变
         let scrollLineX = CGFloat(currentIndex) * scrollLine.frame.width
-        UIView.animate(withDuration: 0.15) {
-            self.scrollLine.frame.origin.x = scrollLineX
+        //获取第一个label
+        guard let firstLabel = titleLabels.first
+            else{
+                return
         }
+        UIView.animate(withDuration:0.25) {
+            self.scrollLine.snp.updateConstraints({ (make) in
+                make.left.equalTo(firstLabel).offset(scrollLineX)
+            })
+            self.scrollView.superview?.layoutIfNeeded()
+        }
+       /*
+         UIView动画为什么不执行,因为在使用约束添加动画的时候，有个原则就是动画要添加到当前视图的父视图上。所以self.scrollView.layoutIfNeeded()这句话是不对的，应该用scrollView的父视图来调用layoutIfNeeded()。这里改变后就会有动画啦。上面的调整布局也应该改为self.scrollView.superview?.layoutIfNeeded()。
+         */
         //6.通知代理
         delgate?.pageTitleView(titleView: self, slectedIndex: currentIndex)
         
