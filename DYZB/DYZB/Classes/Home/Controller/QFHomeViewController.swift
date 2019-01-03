@@ -20,6 +20,8 @@ class QFHomeViewController: UIViewController {
         return titleView
     }()//闭包
     
+    
+    
     private lazy var pageContentView : QFPageContentView = {[weak self] in
         //1.确定内容的Frame
         let contentViewHeight = kScreenHeight - kStatusBarHeight - kNavigationBarHeight - kTitleViewHeight
